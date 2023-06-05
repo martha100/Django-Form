@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django App</title>
+    {% load static %}
+    <link rel="stylesheet" href={% static "css/styles.css"%}>
+</head>
+<body>
+<section>
+    <div>
+        <nav>
+             <a href=""><button>Home</button></a>
+             <a href=""><button>About</button></a>
+             <a href=""><button>Gallery</button></a>
+             <a href=""><button>Register</button></a>
+             <a href=""><button>Login</button></a>
+        </nav>
+    </div>
+</section>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>

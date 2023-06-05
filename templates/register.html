@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="form-section">
+       <div class="form-section-container">
+           <h1>Register Here</h1>
+           <form class="reg-form" method="post" action="">
+            {% csrf_token %}
+               {{ form.as_p }}
+               <input class="m-btn-reg" type="submit" name="m-btn-reg" value="Register">
+           </form>
+           {% if register_button == "Register"%}
+               <h5>Name:{{ name }}</h5>
+               <h5>Email:{{ email }}</h5>
+               <h5>Id_number:{{ id_number }}</h5>
+               <h5>Date_of_birth{{ date_of_birth }}</h5>
+               <h5>Password:{{ password }}</h5>
+
+           {% endif %}
+       </div>
+    </section>
+{% endblock %}

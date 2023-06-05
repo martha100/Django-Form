@@ -1,0 +1,29 @@
+.reg-form{
+    width: 45%;
+    margin: auto;
+}
+.reg-form p{
+    display: flex;
+    flex-direction: column;
+}
+.reg-form p label{
+    color: red;
+}
+.reg-form p input{
+    background-color: greenyellow;
+    height: 40px;
+    border: unset;
+    color: #d21eb4;
+    font-size: 20px;
+}
+.m-btn-reg{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 40px;
+    border: unser;
+    border-radius: 10px;
+    background-color: blue;
+    color: #ed64a9;
+    cursor: pointer;
+}
